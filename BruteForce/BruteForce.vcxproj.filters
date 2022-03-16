@@ -31,5 +31,8 @@
     <ClInclude Include="minecraft_18111.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="make_crypto_1759.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
