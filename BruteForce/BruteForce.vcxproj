@@ -146,6 +146,7 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="date_1476.h" />
     <ClInclude Include="make_crypto_1759.h" />
     <ClInclude Include="minecraft_18111.h" />
   </ItemGroup>
