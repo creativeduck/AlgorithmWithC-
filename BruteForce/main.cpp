@@ -1,4 +1,5 @@
-#include "sum_1806.h"
+#include "sum_1208.h"
+
 using namespace std;
 
 int main()

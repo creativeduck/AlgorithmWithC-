@@ -49,5 +49,11 @@
     <ClInclude Include="sum_1806.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="prime_sum_1644.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_1208.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
