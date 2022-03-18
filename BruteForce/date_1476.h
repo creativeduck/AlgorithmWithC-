@@ -1,8 +1,5 @@
 #ifndef DATE_1476
 
-#include <stdio.h>
-#include <string>
-#include <vector>
 #include <algorithm>
 #include <iostream>
 using namespace std;

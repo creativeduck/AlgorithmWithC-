@@ -2,7 +2,6 @@
 
 #include <vector>
 #include <algorithm>
-#include <set>
 #include <iostream>
 
 using namespace std;
@@ -19,15 +18,11 @@ void solve(int start, int depth)
 		int ja = 0;
 		for (int i = 0; i < L; i++)
 		{
-			char alpha = answer[i];
-			if (alpha == 'a' || alpha == 'e' || alpha == 'u' || alpha == 'i' || alpha == 'o')
-			{
+			char w = answer[i];
+			if (w == 'a' || w == 'i' || w == 'e' || w == 'u' || w == 'o')
 				mo++;
-			}
-			else 
-			{
+			else
 				ja++;
-			}
 		}
 		if (mo >= 1 && ja >= 2)
 		{
@@ -44,19 +39,22 @@ void solve(int start, int depth)
 		answer[depth] = words[i];
 		solve(i + 1, depth + 1);
 	}
+
 }
 
 int solution()
 {
 	freopen("input.txt", "r", stdin);
 	cin >> L >> C;
-	words.assign(C, 'a');
+	char w;
 	for (int i = 0; i < C; i++)
 	{
-		cin >> words[i];
+		cin >> w;
+		words.push_back(w);
 	}
 	sort(words.begin(), words.end());
 	solve(0, 0);
+
 	return 0;
 }
 

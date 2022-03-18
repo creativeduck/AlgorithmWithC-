@@ -37,5 +37,17 @@
     <ClInclude Include="date_1476.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="plus_1000.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="remote_1107.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_2003.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_1806.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
