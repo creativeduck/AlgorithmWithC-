@@ -148,6 +148,7 @@
   <ItemGroup>
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="make_crypto_1759.h" />
+    <ClInclude Include="max_diff_10819.h" />
     <ClInclude Include="minecraft_18111.h" />
     <ClInclude Include="plus_1000.h" />
     <ClInclude Include="prime_sum_1644.h" />
