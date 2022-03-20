@@ -152,6 +152,7 @@
     <ClInclude Include="plus_1000.h" />
     <ClInclude Include="prime_sum_1644.h" />
     <ClInclude Include="remote_1107.h" />
+    <ClInclude Include="square_1451.h" />
     <ClInclude Include="sum_1208.h" />
     <ClInclude Include="sum_1806.h" />
     <ClInclude Include="sum_2003.h" />

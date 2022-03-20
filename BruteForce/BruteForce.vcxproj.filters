@@ -55,5 +55,8 @@
     <ClInclude Include="sum_1208.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="square_1451.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
