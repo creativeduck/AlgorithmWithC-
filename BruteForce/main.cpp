@@ -1,4 +1,4 @@
-#include "max_diff_10819.h"
+#include "quad_1992.h"
 
 using namespace std;
 

@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="헤더 파일\BruteForce">
+      <UniqueIdentifier>{eaae4b4a-8f3f-4cbf-b3b9-5b8197dd67f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\DivideConquer">
+      <UniqueIdentifier>{975f78de-e58d-48e0-80f2-78f2f0c7b9b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -28,38 +34,50 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="minecraft_18111.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="make_crypto_1759.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="circle_10971.h">
+      <Filter>헤더 파일\BruteForce</Filter>
     </ClInclude>
     <ClInclude Include="date_1476.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\BruteForce</Filter>
     </ClInclude>
-    <ClInclude Include="plus_1000.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="remote_1107.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="sum_2003.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="sum_1806.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="prime_sum_1644.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="sum_1208.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="square_1451.h">
-      <Filter>헤더 파일</Filter>
+    <ClInclude Include="make_crypto_1759.h">
+      <Filter>헤더 파일\BruteForce</Filter>
     </ClInclude>
     <ClInclude Include="max_diff_10819.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="minecraft_18111.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="plus_1000.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="prime_sum_1644.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="remote_1107.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="square_1451.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_1208.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_1806.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_2003.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="array_11728.h">
+      <Filter>헤더 파일\DivideConquer</Filter>
+    </ClInclude>
+    <ClInclude Include="paper_1780.h">
+      <Filter>헤더 파일\DivideConquer</Filter>
+    </ClInclude>
+    <ClInclude Include="quad_1992.h">
+      <Filter>헤더 파일\DivideConquer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

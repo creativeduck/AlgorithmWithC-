@@ -24,6 +24,7 @@
     <ProjectGuid>{20e2fd67-741e-4939-ad30-437d0f94b945}</ProjectGuid>
     <RootNamespace>BruteForce</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Algorithm</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -146,10 +147,14 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="array_11728.h" />
+    <ClInclude Include="circle_10971.h" />
     <ClInclude Include="date_1476.h" />
+    <ClInclude Include="quad_1992.h" />
     <ClInclude Include="make_crypto_1759.h" />
     <ClInclude Include="max_diff_10819.h" />
     <ClInclude Include="minecraft_18111.h" />
+    <ClInclude Include="paper_1780.h" />
     <ClInclude Include="plus_1000.h" />
     <ClInclude Include="prime_sum_1644.h" />
     <ClInclude Include="remote_1107.h" />
