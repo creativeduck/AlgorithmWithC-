@@ -148,8 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="array_11728.h" />
+    <ClInclude Include="bi_2193.h" />
     <ClInclude Include="circle_10971.h" />
     <ClInclude Include="date_1476.h" />
+    <ClInclude Include="make_one_1463.h" />
     <ClInclude Include="quad_1992.h" />
     <ClInclude Include="make_crypto_1759.h" />
     <ClInclude Include="max_diff_10819.h" />
@@ -159,9 +161,14 @@
     <ClInclude Include="prime_sum_1644.h" />
     <ClInclude Include="remote_1107.h" />
     <ClInclude Include="square_1451.h" />
+    <ClInclude Include="stair_10844.h" />
+    <ClInclude Include="sticker_9465.h" />
     <ClInclude Include="sum_1208.h" />
     <ClInclude Include="sum_1806.h" />
     <ClInclude Include="sum_2003.h" />
+    <ClInclude Include="sum_9095.h" />
+    <ClInclude Include="tile_11726.h" />
+    <ClInclude Include="up_11057.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,7 +12,7 @@ string ans = "";
 
 void compress(int y, int x, int len)
 {
-	ans + "(";
+	//ans += "(";
 	int start = video[y][x];
 	for (int i = y; i < y + len; i++)
 	{
@@ -33,8 +33,8 @@ void compress(int y, int x, int len)
 			}
 		}
 	}
-	ans + to_string(start);
-	ans + ")";
+	ans += to_string(start);
+	//ans += ")";
 }
 
 int solution()
@@ -57,14 +57,14 @@ int solution()
 		}
 		video.push_back(v);
 	}
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
-			cout << video[i][j];
-		}
-		cout << endl;
-	}
+	//for (int i = 0; i < N; i++)
+	//{
+	//	for (int j = 0; j < N; j++)
+	//	{
+	//		cout << video[i][j];
+	//	}
+	//	cout << endl;
+	//}
 
 	compress(0, 0, N);
 	cout << ans;

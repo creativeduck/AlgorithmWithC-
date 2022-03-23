@@ -19,6 +19,9 @@
     <Filter Include="헤더 파일\DivideConquer">
       <UniqueIdentifier>{975f78de-e58d-48e0-80f2-78f2f0c7b9b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\DP">
+      <UniqueIdentifier>{3584eb6f-2d26-43bf-8e00-2a79a67a8119}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -78,6 +81,27 @@
     </ClInclude>
     <ClInclude Include="quad_1992.h">
       <Filter>헤더 파일\DivideConquer</Filter>
+    </ClInclude>
+    <ClInclude Include="make_one_1463.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="tile_11726.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="sum_9095.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="stair_10844.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="up_11057.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="bi_2193.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="sticker_9465.h">
+      <Filter>헤더 파일\DP</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
