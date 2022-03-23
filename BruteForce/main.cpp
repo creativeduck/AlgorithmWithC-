@@ -1,9 +1,9 @@
-#include "sticker_9465.h"
+#include "permutation_11055.h"
 
 using namespace std;
 
 int main()
 {
-	solution();
+	solution();	
 	return 0;
 }

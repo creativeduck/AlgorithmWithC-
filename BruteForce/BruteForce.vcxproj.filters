@@ -103,5 +103,14 @@
     <ClInclude Include="sticker_9465.h">
       <Filter>헤더 파일\DP</Filter>
     </ClInclude>
+    <ClInclude Include="tmp.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="alcohol_2156.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="permutation_11055.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

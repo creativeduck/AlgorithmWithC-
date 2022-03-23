@@ -147,11 +147,13 @@
     <Text Include="output.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="alcohol_2156.h" />
     <ClInclude Include="array_11728.h" />
     <ClInclude Include="bi_2193.h" />
     <ClInclude Include="circle_10971.h" />
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="make_one_1463.h" />
+    <ClInclude Include="permutation_11055.h" />
     <ClInclude Include="quad_1992.h" />
     <ClInclude Include="make_crypto_1759.h" />
     <ClInclude Include="max_diff_10819.h" />
@@ -168,6 +170,7 @@
     <ClInclude Include="sum_2003.h" />
     <ClInclude Include="sum_9095.h" />
     <ClInclude Include="tile_11726.h" />
+    <ClInclude Include="tmp.h" />
     <ClInclude Include="up_11057.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
