@@ -153,7 +153,12 @@
     <ClInclude Include="circle_10971.h" />
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="make_one_1463.h" />
+    <ClInclude Include="omok_2615.h" />
+    <ClInclude Include="stair_2579.h" />
+    <ClInclude Include="sum_1699.h" />
+    <ClInclude Include="sum_1912.h" />
     <ClInclude Include="permutation_11055.h" />
+    <ClInclude Include="permutation_11722.h" />
     <ClInclude Include="quad_1992.h" />
     <ClInclude Include="make_crypto_1759.h" />
     <ClInclude Include="max_diff_10819.h" />

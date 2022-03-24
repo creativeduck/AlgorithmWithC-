@@ -1,4 +1,4 @@
-#include "permutation_11055.h"
+#include "omok_2615.h"
 
 using namespace std;
 
