@@ -150,6 +150,7 @@
     <ClInclude Include="alcohol_2156.h" />
     <ClInclude Include="array_11728.h" />
     <ClInclude Include="bi_2193.h" />
+    <ClInclude Include="card_11052.h" />
     <ClInclude Include="circle_10971.h" />
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="make_one_1463.h" />

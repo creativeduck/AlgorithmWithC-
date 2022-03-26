@@ -1,4 +1,4 @@
-#include "omok_2615.h"
+#include "card_11052.h"
 
 using namespace std;
 
