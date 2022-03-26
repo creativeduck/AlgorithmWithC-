@@ -176,6 +176,7 @@
     <ClInclude Include="sum_2003.h" />
     <ClInclude Include="sum_9095.h" />
     <ClInclude Include="tile_11726.h" />
+    <ClInclude Include="tile_2133.h" />
     <ClInclude Include="tmp.h" />
     <ClInclude Include="up_11057.h" />
   </ItemGroup>
