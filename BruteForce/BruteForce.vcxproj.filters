@@ -133,5 +133,8 @@
     <ClInclude Include="tile_2133.h">
       <Filter>헤더 파일\DP</Filter>
     </ClInclude>
+    <ClInclude Include="cross_17085.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
