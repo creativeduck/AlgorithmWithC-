@@ -152,8 +152,10 @@
     <ClInclude Include="bi_2193.h" />
     <ClInclude Include="card_11052.h" />
     <ClInclude Include="circle_10971.h" />
+    <ClInclude Include="code_2011.h" />
     <ClInclude Include="cross_17085.h" />
     <ClInclude Include="date_1476.h" />
+    <ClInclude Include="hanoi_11729.h" />
     <ClInclude Include="make_one_1463.h" />
     <ClInclude Include="omok_2615.h" />
     <ClInclude Include="stair_2579.h" />
@@ -175,6 +177,7 @@
     <ClInclude Include="sum_1208.h" />
     <ClInclude Include="sum_1806.h" />
     <ClInclude Include="sum_2003.h" />
+    <ClInclude Include="sum_2225.h" />
     <ClInclude Include="sum_9095.h" />
     <ClInclude Include="tile_11726.h" />
     <ClInclude Include="tile_2133.h" />

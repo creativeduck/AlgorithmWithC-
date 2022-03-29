@@ -136,5 +136,14 @@
     <ClInclude Include="cross_17085.h">
       <Filter>헤더 파일\BruteForce</Filter>
     </ClInclude>
+    <ClInclude Include="sum_2225.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="code_2011.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="hanoi_11729.h">
+      <Filter>헤더 파일\DivideConquer</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
