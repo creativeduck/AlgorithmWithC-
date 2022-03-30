@@ -1,24 +1,14 @@
 #ifndef CROSS_17085
 
 #include <iostream>
-#include <vector>
-#include <tuple>
 
 using namespace std;
 const int maxN = 15;
 int N, M;
-int board[maxN][maxN];
-int dy[4] = { -1, 0, 1, 0 };
+char board[maxN][maxN];
+int dy[4] = { 1, 0, -1, 0 };
 int dx[4] = { 0, 1, 0, -1 };
 int ans = 1;
-int c[maxN][maxN];
-bool visited[maxN][maxN];
-
-
-int square(int n)
-{
-	return 4 * (n-1) + 1;
-}
 
 bool isBound(int y, int x)
 {
@@ -27,123 +17,87 @@ bool isBound(int y, int x)
 	return false;
 }
 
-int solve(int y, int x, int cnt)
+int find(int y, int x)
 {
-	if (!isBound(y, x) || board[y][x] == 0 || visited[y][x])
-		return cnt;
+	int len = 0;
 	for (int i = 1; i < 15; i++)
 	{
-		int k = 0;
-		for (k; k < 4; k++)
+		bool flag = true;
+		for (int k = 0; k < 4; k++)
 		{
 			int ny = y + i * dy[k];
 			int nx = x + i * dx[k];
-			if (!isBound(ny, nx) || board[ny][nx] == 0)
-			{
-				i = 16;
-				break;
-			}
+			if (!(isBound(ny, nx) && board[ny][nx] == '#'))
+				flag = false;
 		}
-		if (k == 4)
-		{
-			cnt++;
-		}
+		if (flag)
+			len = i;
+		else
+			break;
 	}
-	return cnt;
+	return len;
 }
 
-int solution()
+void makeCross(int y, int x, int len, char c)
 {
-	freopen("input.txt", "r", stdin);
+	for (int i = 0; i <= len; i++)
+	{
+		for (int k = 0; k < 4; k++)
+		{
+			int ny = y + i * dy[k];
+			int nx = x + i * dx[k];
+			board[ny][nx] = c;
+		}
+	}
+}
+
+int main()
+{
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
 	cin >> N >> M;
-	char tmp;
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < M; j++)
 		{
-			cin >> tmp;
-			if (tmp == '#')
-				board[i][j] = 1;
+			cin >> board[i][j];
 		}
 	}
-	int idx = 0;
+	// 십자가 찾기
 	for (int i = 0; i < N; i++)
 	{
 		for (int j = 0; j < M; j++)
 		{
-			if (board[i][j] == 1)
+			if (board[i][j] == '#')
 			{
-				bool flag = true;
-				int cross = solve(i, j, 1); // 십자가가 있다면, 이때 길이를 반환한다.
-				c[i][j] = cross;
-			}
-		}
-	}
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < M; j++)
-		{
-			//cout << c[i][j];
-			if (c[i][j] > 1)
-			{
-				int gijun =-1;
-				for (int mine = c[i][j]; mine > 0; mine--)
+				int len = find(i, j);
+				if (len > 0)
 				{
-					gijun++;
-					cout << endl;
-					cout << " mine " << mine << " / " << gijun << endl;
-					cout << endl;
-
-					for (int k = i; k < N; k++)
+					// 첫번째 십자가 1부터 최대 크기까지
+					for (int z = 1; z <= len; z++)
 					{
-						for (int z = j + 1; z < M; z++)
-						{
-							int tmpCross = solve(k, z, 1);
-							cout << "tmp " << tmpCross << " k " << k << " z " << z << endl;
-							
-						}
-					}
+						ans = max(ans, (z * 4 + 1));
+						makeCross(i, j, z, '*');
 
-					//for (int k = i; k < N; k++)
-					//{
-					//	for (int z = j + 1; z < M; z++)
-					//	{
-					//		if (c[k][z] > 0)
-					//		{
-					//			cout << " k " << k << " z " << z << endl;
-					//			for (int pine = c[k][z]; pine > 0; pine--)
-					//			{
-					//				cout << " pine " << pine << (z - pine <= j) << "asdf" << z << endl;
-					//				if ((k - (pine-1) <= i && i <= k + (pine - 1)) && (j - (mine - 1) <= z && z <= j + (mine - 1)))
-					//				{
-					//					cout << "wow" << endl;
-					//					continue;
-					//				}
-					//				if ((i <= k && k <= i + (mine-1)) && (z - (pine - 1) <= j && j <= z))
-					//				{
-					//					cout << "wow 2" << endl;
-					//					continue;
-					//				}
-					//				int sq1 = square(mine);
-					//				int sq2 = square(pine);
-					//				cout << sq1 << " / " << sq2 << " pine " << pine << " mi ne " << mine << endl;
-					//				ans = max(ans, sq1 * sq2);
-					//				cout << ans << " ytto " << i << " / " << j << " / " << k << " / " << z << endl;
-					//			}
-					//		}
-					//	}
-					//}
+						for (int r = 0; r < N; r++)
+						{
+							for (int c = 0; c < M; c++)
+							{
+								if (board[r][c] == '#')
+								{
+									int secLen = find(r, c);
+									if (secLen > 0)
+										ans = max(ans, (secLen * 4 + 1) * (z * 4 + 1));
+								}
+							}
+						}
+						makeCross(i, j, z, '#');
+					}
 				}
 			}
-
 		}
 	}
-	// 중복 십자가 있는지 확인
-
-
 	cout << ans;
 	return 0;
 }
@@ -151,11 +105,17 @@ int solution()
 #endif // !CROSS_17085
 
 /*
-아예 접근을 못 했다.
-그냥 다른 사람 정답을 보고 풀었다.
-최대한 얻어가고, 
-대신.... 돌리진 말자.
-북마크한 다음에, 나중에 다시 풀 때 돌리자
+1. 십자가 찾기
+2. 하나의 십자가에 대해, 중복되지 않는 십자가 찾기
+2-1. 이때, 그 하나의 십자가의 크기를 줄이면서도 중복되지 않는 십자가 찾기
+3. 곱의 최댓값 구하기
 
+일단 이렇게 엄청난 부르트포스로 구하긴 했다.
+단, 시간초과가 날 것 같다. 엄청나게 for 문을 반복했기 때문이다.
+무려 5중 for 문이다.
+
+-- 답 참고함 -- 
+단, 그래도 내 로직을 좀 사용하면서 수정했다.
+이젠 어떻게 돌아가는지 이해는 좀 간다.
 
 */

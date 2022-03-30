@@ -158,6 +158,7 @@
     <ClInclude Include="hanoi_11729.h" />
     <ClInclude Include="make_one_1463.h" />
     <ClInclude Include="omok_2615.h" />
+    <ClInclude Include="palindrome_1254.h" />
     <ClInclude Include="stair_2579.h" />
     <ClInclude Include="sum_1699.h" />
     <ClInclude Include="sum_1912.h" />

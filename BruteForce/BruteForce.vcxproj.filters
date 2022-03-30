@@ -145,5 +145,8 @@
     <ClInclude Include="hanoi_11729.h">
       <Filter>헤더 파일\DivideConquer</Filter>
     </ClInclude>
+    <ClInclude Include="palindrome_1254.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
