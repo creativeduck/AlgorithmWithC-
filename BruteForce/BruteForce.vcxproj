@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClInclude Include="alcohol_2156.h" />
     <ClInclude Include="array_11728.h" />
+    <ClInclude Include="bitonic_11054.h" />
     <ClInclude Include="bi_2193.h" />
     <ClInclude Include="card_11052.h" />
     <ClInclude Include="circle_10971.h" />
