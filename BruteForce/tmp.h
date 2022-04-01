@@ -1,82 +1,13 @@
 #ifndef TMP
 
 #include <iostream>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
-string S;
-
-void solve()
-{
-	int len = S.length();
-	int mid = len / 2;
-	int tmpFlag = true;
-	if (len % 2 == 0)
-	{
-		for (int i = 0; i < len - mid; i++)
-		{
-			if (S[mid + i] != S[mid - i - 1])
-			{
-				tmpFlag = false;
-				break;
-			}
-		}
-	}
-	else
-	{
-		for (int i = 1; i < len - mid; i++)
-		{
-			if (S[mid + i] != S[mid - i])
-			{
-				tmpFlag = false;
-				break;
-			}
-		}
-	}
-	if (tmpFlag)
-	{
-		cout << len;
-		return;
-	}
-
-	for (int i = mid; i < len - 1; i++)
-	{
-		bool flag = true;
-		int j = 1;
-		for (j; (i + j < len && i - j >0); j++)
-		{
-			if (S[i + j] != S[i - j])
-			{
-
-				flag = false;
-				break;
-			}
-		}
-		if (flag)
-		{
-			cout << len + i-(j-1);
-			return;
-		}
-		flag = true;
-		for (j = 0; (i + j < len && i - j - 1 >0); j++)
-		{
-			if (S[i + j] != S[i - j - 1])
-			{
-				flag = false;
-				break;
-			}
-		}
-		if (flag)
-		{
-			cout << len + i-j;
-			return;
-		}
-	}
-	if (S[len-1] == S[len-2])
-		cout << len + len - 2;
-	else
-		cout << len + len - 1;
-	return;
-}
+const int maxN = 101;
+int T, N;
+int ans=0;
 
 int solution()
 {
@@ -84,8 +15,33 @@ int solution()
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	cout.tie(NULL);
-	cin >> S;
-	solve();
+	cin >> T;
+	for (int t = 0; t < T; t++)
+	{
+		cin >> N;
+		vector<int> v(N, 0);
+		for (int n = 0; n < N; n++)
+		{
+			cin >> v[n];
+		}
+		for (int i = 0; i < v.size() - 1; i++)
+		{
+			int minIdx = i;
+			int minVal = INT_MAX;
+			for (int k = i; k < v.size(); k++)
+			{
+				if (minVal > v[k])
+				{
+					minVal = v[k];
+					minIdx = k;
+				}
+			}
+			reverse(v.begin() + i, v.begin() + minIdx+1);
+			ans += (minIdx - i + 1);
+		}
+		cout << "Case #" << t + 1 << ": " << ans << '\n';
+		ans = 0;
+	}
 	return 0;
 }
 
