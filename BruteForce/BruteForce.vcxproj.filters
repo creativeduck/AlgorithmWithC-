@@ -151,5 +151,11 @@
     <ClInclude Include="bitonic_11054.h">
       <Filter>헤더 파일\DP</Filter>
     </ClInclude>
+    <ClInclude Include="query_14648.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="wave_9461.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
