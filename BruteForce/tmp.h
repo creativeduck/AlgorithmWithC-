@@ -2,12 +2,18 @@
 
 #include <iostream>
 #include <algorithm>
-#include <vector>
 
 using namespace std;
-const int maxN = 101;
-int T, N;
-int ans=0;
+int T, N, ans = 0;
+int dice[100000];
+
+void pushLast(int arr[],int target,int size)
+{
+	int tmp = arr[target];
+	for (int i = target; i < size-1; i++)
+		arr[i] = arr[i + 1];
+	arr[size - 1] = tmp;
+}
 
 int solution()
 {
@@ -19,28 +25,28 @@ int solution()
 	for (int t = 0; t < T; t++)
 	{
 		cin >> N;
-		vector<int> v(N, 0);
 		for (int n = 0; n < N; n++)
+			cin >> dice[n];
+		sort(dice, dice+N);
+		int d = N;
+		while (d > 1)
 		{
-			cin >> v[n];
-		}
-		for (int i = 0; i < v.size() - 1; i++)
-		{
-			int minIdx = i;
-			int minVal = INT_MAX;
-			for (int k = i; k < v.size(); k++)
+			bool flag = true;
+			for (int i=0; i < d; i++)
 			{
-				if (minVal > v[k])
+				if (dice[i] < i + 1)
 				{
-					minVal = v[k];
-					minIdx = k;
+					pushLast(dice, i, N);
+					flag = false;
+					break;
 				}
 			}
-			reverse(v.begin() + i, v.begin() + minIdx+1);
-			ans += (minIdx - i + 1);
+			if (flag)
+				break;
+			else
+				d--;
 		}
-		cout << "Case #" << t + 1 << ": " << ans << '\n';
-		ans = 0;
+		cout << "Case #" << t + 1 << ": " << d << '\n';
 	}
 	return 0;
 }
