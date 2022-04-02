@@ -157,5 +157,11 @@
     <ClInclude Include="wave_9461.h">
       <Filter>헤더 파일\DP</Filter>
     </ClInclude>
+    <ClInclude Include="ureka_10448.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="math_19532.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

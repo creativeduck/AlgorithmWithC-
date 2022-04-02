@@ -158,6 +158,7 @@
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="hanoi_11729.h" />
     <ClInclude Include="make_one_1463.h" />
+    <ClInclude Include="math_19532.h" />
     <ClInclude Include="omok_2615.h" />
     <ClInclude Include="palindrome_1254.h" />
     <ClInclude Include="query_14648.h" />
@@ -186,6 +187,7 @@
     <ClInclude Include="tile_2133.h" />
     <ClInclude Include="tmp.h" />
     <ClInclude Include="up_11057.h" />
+    <ClInclude Include="ureka_10448.h" />
     <ClInclude Include="wave_9461.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
