@@ -23,8 +23,7 @@ int solution()
 		rooms.push_back(p);
 	}
 	sort(rooms.begin(), rooms.end());
-	int cnt = 0;
-	int earlist = 0;
+	int cnt = 0, earlist = 0;
 	for (int i = 0; i < N; i++)
 	{
 		if (earlist <= rooms[i].second)
