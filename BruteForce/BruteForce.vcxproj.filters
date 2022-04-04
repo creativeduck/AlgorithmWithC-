@@ -22,6 +22,9 @@
     <Filter Include="헤더 파일\DP">
       <UniqueIdentifier>{3584eb6f-2d26-43bf-8e00-2a79a67a8119}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Greedy">
+      <UniqueIdentifier>{498bc8ff-8bad-484a-bd3b-d8592da67a24}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -162,6 +165,12 @@
     </ClInclude>
     <ClInclude Include="math_19532.h">
       <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="triangle_1198.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="room_1931.h">
+      <Filter>헤더 파일\Greedy</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

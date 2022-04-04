@@ -162,6 +162,7 @@
     <ClInclude Include="omok_2615.h" />
     <ClInclude Include="palindrome_1254.h" />
     <ClInclude Include="query_14648.h" />
+    <ClInclude Include="room_1931.h" />
     <ClInclude Include="stair_2579.h" />
     <ClInclude Include="sum_1699.h" />
     <ClInclude Include="sum_1912.h" />
@@ -186,6 +187,7 @@
     <ClInclude Include="tile_11726.h" />
     <ClInclude Include="tile_2133.h" />
     <ClInclude Include="tmp.h" />
+    <ClInclude Include="triangle_1198.h" />
     <ClInclude Include="up_11057.h" />
     <ClInclude Include="ureka_10448.h" />
     <ClInclude Include="wave_9461.h" />
