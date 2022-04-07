@@ -32,3 +32,4 @@ int solution(int n, vector<int> lost, vector<int> reserve) {
     }
     return answer;
 }
+

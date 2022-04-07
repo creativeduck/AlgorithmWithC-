@@ -156,6 +156,7 @@
     <ClInclude Include="code_2011.h" />
     <ClInclude Include="cross_17085.h" />
     <ClInclude Include="date_1476.h" />
+    <ClInclude Include="fashion_1.h" />
     <ClInclude Include="hanoi_11729.h" />
     <ClInclude Include="make_one_1463.h" />
     <ClInclude Include="math_19532.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="sum_2003.h" />
     <ClInclude Include="sum_2225.h" />
     <ClInclude Include="sum_9095.h" />
+    <ClInclude Include="test_bruthforce.h" />
     <ClInclude Include="tile_11726.h" />
     <ClInclude Include="tile_2133.h" />
     <ClInclude Include="tmp.h" />
