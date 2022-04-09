@@ -158,12 +158,15 @@
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="fashion_1.h" />
     <ClInclude Include="hanoi_11729.h" />
+    <ClInclude Include="joystick_greedy.h" />
+    <ClInclude Include="make_big.h" />
     <ClInclude Include="make_one_1463.h" />
     <ClInclude Include="math_19532.h" />
     <ClInclude Include="omok_2615.h" />
     <ClInclude Include="palindrome_1254.h" />
     <ClInclude Include="query_14648.h" />
     <ClInclude Include="room_1931.h" />
+    <ClInclude Include="safe_2468.h" />
     <ClInclude Include="stair_2579.h" />
     <ClInclude Include="sum_1699.h" />
     <ClInclude Include="sum_1912.h" />
@@ -189,6 +192,7 @@
     <ClInclude Include="tile_11726.h" />
     <ClInclude Include="tile_2133.h" />
     <ClInclude Include="tmp.h" />
+    <ClInclude Include="tomato_7576.h" />
     <ClInclude Include="triangle_1198.h" />
     <ClInclude Include="up_11057.h" />
     <ClInclude Include="ureka_10448.h" />

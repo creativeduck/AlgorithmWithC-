@@ -25,6 +25,12 @@
     <Filter Include="헤더 파일\Greedy">
       <UniqueIdentifier>{498bc8ff-8bad-484a-bd3b-d8592da67a24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BFS">
+      <UniqueIdentifier>{b419fc75-34ee-4bad-aa2e-64e0aec89547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\DFS">
+      <UniqueIdentifier>{270adbf7-b485-4740-b24d-e1c197f7f84c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -175,7 +181,19 @@
     <ClInclude Include="fashion_1.h">
       <Filter>헤더 파일\Greedy</Filter>
     </ClInclude>
+    <ClInclude Include="joystick_greedy.h">
+      <Filter>헤더 파일\Greedy</Filter>
+    </ClInclude>
     <ClInclude Include="test_bruthforce.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="safe_2468.h">
+      <Filter>헤더 파일\DFS</Filter>
+    </ClInclude>
+    <ClInclude Include="tomato_7576.h">
+      <Filter>헤더 파일\BFS</Filter>
+    </ClInclude>
+    <ClInclude Include="make_big.h">
       <Filter>헤더 파일\Greedy</Filter>
     </ClInclude>
   </ItemGroup>
