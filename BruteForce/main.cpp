@@ -1,5 +1,4 @@
-#include "tomato_7576.h"
-#include <iostream>
+#include "hanoi_11729.h"
 
 using namespace std;
 
