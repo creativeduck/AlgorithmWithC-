@@ -151,6 +151,7 @@
     <ClInclude Include="array_11728.h" />
     <ClInclude Include="bitonic_11054.h" />
     <ClInclude Include="bi_2193.h" />
+    <ClInclude Include="board_cover_algo.h" />
     <ClInclude Include="card_11052.h" />
     <ClInclude Include="circle_10971.h" />
     <ClInclude Include="code_2011.h" />
@@ -194,6 +195,7 @@
     <ClInclude Include="tmp.h" />
     <ClInclude Include="tomato_7576.h" />
     <ClInclude Include="triangle_1198.h" />
+    <ClInclude Include="ttmp.h" />
     <ClInclude Include="up_11057.h" />
     <ClInclude Include="ureka_10448.h" />
     <ClInclude Include="wave_9461.h" />

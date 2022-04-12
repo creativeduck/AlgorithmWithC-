@@ -196,5 +196,11 @@
     <ClInclude Include="make_big.h">
       <Filter>헤더 파일\Greedy</Filter>
     </ClInclude>
+    <ClInclude Include="board_cover_algo.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="ttmp.h">
+      <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
