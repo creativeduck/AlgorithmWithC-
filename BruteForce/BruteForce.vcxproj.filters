@@ -31,6 +31,9 @@
     <Filter Include="헤더 파일\DFS">
       <UniqueIdentifier>{270adbf7-b485-4740-b24d-e1c197f7f84c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Conbinational Search">
+      <UniqueIdentifier>{0707b115-ffb8-433a-9c11-b77596cec086}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -196,11 +199,20 @@
     <ClInclude Include="make_big.h">
       <Filter>헤더 파일\Greedy</Filter>
     </ClInclude>
-    <ClInclude Include="board_cover_algo.h">
-      <Filter>헤더 파일\BruteForce</Filter>
-    </ClInclude>
     <ClInclude Include="ttmp.h">
       <Filter>헤더 파일\BruteForce</Filter>
+    </ClInclude>
+    <ClInclude Include="board_cover_algo.h">
+      <Filter>헤더 파일\Conbinational Search</Filter>
+    </ClInclude>
+    <ClInclude Include="allergy_algo.h">
+      <Filter>헤더 파일\Conbinational Search</Filter>
+    </ClInclude>
+    <ClInclude Include="poly_algo.h">
+      <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="prison_break_algo.h">
+      <Filter>헤더 파일\DP</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -148,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="alcohol_2156.h" />
+    <ClInclude Include="allergy_algo.h" />
     <ClInclude Include="array_11728.h" />
     <ClInclude Include="bitonic_11054.h" />
     <ClInclude Include="bi_2193.h" />
@@ -165,6 +166,8 @@
     <ClInclude Include="math_19532.h" />
     <ClInclude Include="omok_2615.h" />
     <ClInclude Include="palindrome_1254.h" />
+    <ClInclude Include="poly_algo.h" />
+    <ClInclude Include="prison_break_algo.h" />
     <ClInclude Include="query_14648.h" />
     <ClInclude Include="room_1931.h" />
     <ClInclude Include="safe_2468.h" />

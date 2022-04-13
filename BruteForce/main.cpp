@@ -1,5 +1,4 @@
-#include "board_cover_algo.h"
-
+#include "prison_break_algo.h"
 using namespace std;
 
 int main()
