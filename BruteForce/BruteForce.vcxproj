@@ -169,6 +169,7 @@
     <ClInclude Include="poly_algo.h" />
     <ClInclude Include="prison_break_algo.h" />
     <ClInclude Include="query_14648.h" />
+    <ClInclude Include="report_programmers.h" />
     <ClInclude Include="room_1931.h" />
     <ClInclude Include="safe_2468.h" />
     <ClInclude Include="stair_2579.h" />

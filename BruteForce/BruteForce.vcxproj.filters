@@ -34,6 +34,9 @@
     <Filter Include="헤더 파일\Conbinational Search">
       <UniqueIdentifier>{0707b115-ffb8-433a-9c11-b77596cec086}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Programmers">
+      <UniqueIdentifier>{24168d4e-4575-4b1c-8a71-397cec44d83d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -213,6 +216,9 @@
     </ClInclude>
     <ClInclude Include="prison_break_algo.h">
       <Filter>헤더 파일\DP</Filter>
+    </ClInclude>
+    <ClInclude Include="report_programmers.h">
+      <Filter>헤더 파일\Programmers</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
