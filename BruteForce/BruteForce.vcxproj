@@ -159,6 +159,7 @@
     <ClInclude Include="cross_17085.h" />
     <ClInclude Include="date_1476.h" />
     <ClInclude Include="fashion_1.h" />
+    <ClInclude Include="graduate_algo.h" />
     <ClInclude Include="hanoi_11729.h" />
     <ClInclude Include="joystick_greedy.h" />
     <ClInclude Include="make_big.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="report_programmers.h" />
     <ClInclude Include="room_1931.h" />
     <ClInclude Include="safe_2468.h" />
+    <ClInclude Include="stable.h" />
     <ClInclude Include="stair_2579.h" />
     <ClInclude Include="sum_1699.h" />
     <ClInclude Include="sum_1912.h" />

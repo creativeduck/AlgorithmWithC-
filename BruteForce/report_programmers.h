@@ -1,6 +1,8 @@
 #include <string>
 #include <vector>
 #include <map>
+#include <set>
+#include <iostream>
 
 using namespace std;
 
@@ -31,72 +33,41 @@ vector<string> split(string str)
 vector<int> solution(vector<string> id_list, vector<string> report, int k) {
     vector<int> answer;
     int len = id_list.size();
-    map<string, vector<string>> userMap; // 유저와 그 유저가 신고한 사람들 리스트 형식의 맵
-    map<string, int> reportedMap;        // 각 유저별 신고당한 횟수
-    map<string, int> reportedUser;       // 신고된 유저 리스트
-    map<string, int> reportOverlap;      // 신고 중복 체크
+    map<string, set<string>> reportMap; // 유저와 그 유저가 신고한 사람들 리스트 형식의 맵
+    map<string, set<string>> reportedMap; // 신고당한 유저가 누구에게 신고당했는지 리스트 형식의 맵
 
     // 유저 이름들 먼저 각 맵에 넣기
-    for (int i = 0; i < len; i++)
+    for (string id : id_list)
     {
-        string user = id_list[i];
-        reportedMap.insert({ user, 0 });
-        vector<string> rp;
-        userMap.insert({ user, rp });
+        reportMap[id] = {};
+        reportedMap[id] = {};
     }
     // 1. map 형식으로 유저와 그가 신고한 사람 리스트 만들기
     string from, to;
-    for (int i = 0; i < report.size(); i++)
+    for (string s : report)
     {
-        vector<string> tmp = split(report[i]);
-        from = tmp[0];
-        to = tmp[1];
-        // 유저가 신고한 사람 리스트에 추가해주기 
-        vector<string> tmpReport = userMap[from];
-        bool flag = true;
-        for (int j = 0; j < tmpReport.size(); j++)
-        {
-            if (tmpReport[j] == to)
-                flag = false;
-        }
-        if (flag)
-        {
-            userMap[from].push_back(to);
-            // 신고당한 횟수 리스트 갱신하기
-            reportedMap[to]++;
-        }
+        vector<string> tmp = split(s);
+        from = tmp[0]; to = tmp[1];
+        // 유저가 신고한 사람 리스트에 추가하기
+        reportMap[from].insert(to);
+        // 신고당한 사람도 누가 신고했는지 리스트 추가하기
+        reportedMap[to].insert(from);
     }
     // 2. 신고당한 횟수 보면서 신고처리하기
-    for (int i = 0; i < len; i++)
+    for (string id : id_list)
     {
-        string user = id_list[i];
-        int reportNum = reportedMap[user];
-        if (reportNum >= k)
-            reportedUser.insert({ user, 1 });
-        else
-            reportedUser.insert({ user, 0 });
-    }
-    // 3. 각 유저별로 정지된 ID들 횟수 배열에 넣기
-    for (int i = 0; i < len; i++)
-    {
-        string user = id_list[i];
-        vector<string> reportList = userMap[user];
-        int stoped = 0;
-        // 이 유저가 신고한 사람들 중 정지된 횟수 반환하기
-        for (int j = 0; j < reportList.size(); j++)
+        set<string> reportedSet = reportMap[id];
+        int stopped = 0;
+        for (string reported : reportedSet)
         {
-            string thisguy = reportList[j];
-            // 정지되었다면
-            if (reportedUser[thisguy] == 1)
-                stoped++;
+            int reportNum = reportedMap[reported].size();
+            if (reportNum >= k)
+                stopped++;
         }
-        answer.push_back(stoped);
+        answer.push_back(stopped);
     }
-
-
     return answer;
 }
-
 /*
 일단 대충 풀었다.
 대충이란 말은, 시간이나 효율성을 고려하지 않았다.
@@ -104,5 +75,15 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
 시간복잡도 자체는 O(n)에 수렴한다.
 
 다만, 추후 효율성을 증가시킬 방법을 찾고 싶다.
+
+이후 두 개의 맵을 이용하는 방식을 사용했다.
+신고한 사람이 신고한 사람들 set를 갖는 맵과,
+신고당한 사람이 자신을 신고한 사람들 set를 갖는 맵을 갖는다.
+
+이걸 바탕으로 각 신고한 사람이 신고한 set을 바탕으로,
+그 사람이 신고당한 횟수를 가져오고, 이 값이 임계치를 넘으면 정지당한 횟수를 추가해서 이걸 다 합해서 정답배열에 넣었다.
+
+이때 신고당한 사람 리스트를 단순히 정수형이 아니라 set으로 구현한 이유는,
+신고를 중복한 경우 한 번만 들어가야 하기 때문이다.
 
 */

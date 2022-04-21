@@ -37,6 +37,9 @@
     <Filter Include="헤더 파일\Programmers">
       <UniqueIdentifier>{24168d4e-4575-4b1c-8a71-397cec44d83d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\BitMask">
+      <UniqueIdentifier>{4d53fc47-02ef-474f-bfc5-2085f0868d4f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -219,6 +222,12 @@
     </ClInclude>
     <ClInclude Include="report_programmers.h">
       <Filter>헤더 파일\Programmers</Filter>
+    </ClInclude>
+    <ClInclude Include="stable.h">
+      <Filter>헤더 파일\BitMask</Filter>
+    </ClInclude>
+    <ClInclude Include="graduate_algo.h">
+      <Filter>헤더 파일\BitMask</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
